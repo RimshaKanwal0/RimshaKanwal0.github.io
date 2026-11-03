@@ -1,6 +1,6 @@
 /* ================================================================
    PORTFOLIO DATA — experience, certificates, skills, projects, links.
-   (Name, email and resume link live in index.html so they render instantly.)
+   (Name and email live in index.html so they render instantly.)
    ================================================================ */
 window.PORTFOLIO = {
 

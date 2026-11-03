@@ -9,6 +9,6 @@ Plain HTML, CSS and JavaScript (no framework), so it loads fast.
 ## Update content
 - `data.js`: experience, certificates, skills, projects and social links
 - `index.html`: name, hero text, about text, email
-- `assets/`: photo, resume PDF, project images
+- `assets/`: photo, project images, icons
 
 Push to `main` and GitHub Pages redeploys automatically.
