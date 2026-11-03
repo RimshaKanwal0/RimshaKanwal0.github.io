@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rimsha Kanwal | AI Engineer</title>
+  <meta name="description" content="Rimsha Kanwal — Lahore-based AI Engineer building RAG systems, AI agents and LLM applications.">
+  <meta property="og:title" content="Rimsha Kanwal — AI Engineer">
+  <meta property="og:description" content="Lahore-based AI Engineer building RAG systems, AI agents and LLM applications.">
+  <meta property="og:image" content="https://rimshakanwal0.github.io/assets/rimsha.png">
+  <meta property="og:url" content="https://rimshakanwal0.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://rimshakanwal0.github.io/">
+  <meta name="theme-color" content="#e11d48">
+  <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/rimsha.webp" type="image/webp" fetchpriority="high">
+  <!-- set theme before first paint: no flash -->
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <button class="theme" id="theme" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <span class="switch"><span class="knob"></span></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+  </button>
+
+  <!-- fixed side rails (desktop) -->
+  <aside class="rail rail-left" aria-label="Social links"><nav class="rail-icons" id="rail-socials"></nav></aside>
+  <aside class="rail rail-right" aria-label="Email"><a class="rail-mail" href="mailto:rimshakanwal7110@gmail.com">rimshakanwal7110@gmail.com</a></aside>
+
+  <main id="top">
+    <!-- HERO: simple text left, photo right -->
+    <section class="wrap hero">
+      <div class="hero-text">
+        <p class="hi">Hi, I'm</p>
+        <h1><span class="accent">Rimsha Kanwal</span></h1>
+        <p class="role">I'm an AI Engineer</p>
+        <p class="focus">
+          <span class="focus-label">Working on</span>
+          <span class="rotator" aria-hidden="true">
+            <span>Generative AI</span><span>RAG Chatbots</span><span>AI Agents</span><span>LLM Applications</span><span>Voice AI Assistants</span>
+          </span>
+          <span class="sr-only">Generative AI, RAG Chatbots, AI Agents, LLM Applications and Voice AI Assistants</span>
+        </p>
+        <a class="btn outline" href="#about">Know me</a>
+        <div class="socials hero-socials" id="socials-hero"></div>
+      </div>
+      <picture class="photo">
+        <source srcset="assets/rimsha.webp" type="image/webp">
+        <img src="assets/rimsha.png" alt="Rimsha Kanwal" width="500" height="500" fetchpriority="high" decoding="async">
+      </picture>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="wrap about" id="about">
+      <p class="about-text">I'm an <strong>AI Engineer</strong> based in Lahore. I build RAG systems, AI agents and fine-tuned models, and turn them into fast, reliable products people can use.</p>
+      <a class="btn" id="resume" href="assets/Rimsha-Kanwal-Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>My Resume</a>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="wrap split" id="experience">
+      <h2>Experience</h2>
+      <div class="exp">
+        <div class="exp-tabs" role="tablist" aria-label="Companies" id="exp-tabs"></div>
+        <div class="exp-panel" role="tabpanel" id="exp-panel" tabindex="0"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="wrap split" id="certs">
+      <div>
+        <h2>Certifications</h2>
+        <a class="link" id="certs-link" href="#" target="_blank" rel="noopener">View all on LinkedIn →</a>
+      </div>
+      <div class="cert-grid" id="cert-grid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="wrap split" id="skills">
+      <h2>Tools &amp; Skills</h2>
+      <div class="skill-groups" id="skill-groups"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="wrap" id="projects">
+      <div class="row-head">
+        <h2>Projects</h2>
+        <div class="arrows">
+          <button type="button" class="arrow" id="prev" aria-label="Previous projects">‹</button>
+          <button type="button" class="arrow" id="next" aria-label="Next projects">›</button>
+        </div>
+      </div>
+      <div class="track" id="track" tabindex="0" aria-label="Projects"></div>
+      <div class="center"><button type="button" class="btn ghost" id="show-all">Show all projects</button></div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="wrap cta-sec" id="contact">
+      <div class="cta">
+        <p class="cta-kicker">What's next?</p>
+        <h2>Let's build something smart together</h2>
+        <p class="muted">I'm open to AI Engineer roles and freelance projects. Have an idea, a role or a question? My inbox is always open.</p>
+        <div class="cta-actions">
+          <a class="btn" href="mailto:rimshakanwal7110@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>Say hello</a>
+          <a class="btn ghost" href="assets/Rimsha-Kanwal-Resume.pdf" target="_blank" rel="noopener">View resume</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap foot"><span>© 2024 Rimsha Kanwal</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
