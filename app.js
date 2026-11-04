@@ -50,9 +50,8 @@
   $("#certs-link").href = D.certificationsUrl;
   $("#cert-grid").innerHTML = D.certifications.map((c) => `
     <a class="cert" href="${esc(c.url || D.certificationsUrl)}" target="_blank" rel="noopener">
-      <span><h3>${esc(c.title)}</h3><p>${esc(c.issuer)}</p></span>
+      <span class="cert-text"><h3>${esc(c.title)}</h3><p>${esc(c.issuer)}</p><span class="verify">Verify →</span></span>
       <img src="${esc(c.qr || D.qr)}" alt="QR code to verify ${esc(c.title)}" width="96" height="96" loading="lazy" decoding="async">
-      <span class="verify">Verify →</span>
     </a>`).join("");
 
   /* ---------- skills ---------- */

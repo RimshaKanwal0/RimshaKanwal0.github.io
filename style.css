@@ -128,7 +128,8 @@ h1 .accent{color:var(--accent)}
 .cert:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .cert h3{color:#fff;font-size:1.12rem;font-weight:600;line-height:1.35}
 .cert p{font-size:.9rem;opacity:.9;margin-top:6px}
-.cert .verify{position:absolute;left:24px;bottom:16px;font-size:.82rem;font-weight:500;opacity:.9}
+.cert-text{display:flex;flex-direction:column;min-width:0}
+.cert .verify{margin-top:auto;padding-top:14px;font-size:.82rem;font-weight:500;opacity:.9}
 .cert img{width:96px;height:96px;flex-shrink:0;background:#fff;padding:4px;border-radius:4px}
 
 /* skills */
@@ -163,6 +164,8 @@ h1 .accent{color:var(--accent)}
 .proj-links svg{width:16px;height:16px}
 .center{text-align:center}
 
+.foot a.built{display:inline-flex;align-items:center;gap:6px}
+.foot a.built svg{width:16px;height:16px;fill:#d97757}
 .foot{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;padding-block:28px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 
 /* responsive */
