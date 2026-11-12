@@ -6,7 +6,6 @@ Personal portfolio of Rimsha Kanwal, AI Engineer based in Lahore.
 
 Plain HTML, CSS and JavaScript (no framework), so it loads fast.
 
-Built with [Claude Code](https://claude.com/claude-code).
 
 ## Update content
 - `data.js`: experience, certificates, skills, projects and social links
